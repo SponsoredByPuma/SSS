@@ -13,6 +13,7 @@ print("Messreihe:" + str(rl.cbVInScan(0, 0, 0, 300, 8000, 1)))
 #print("Samplerate:" + str(rl.cbInScanRate(0, 0, 0, 8000)))
 #print("Nyquist:" + str(rl.cbInScanRate(0, 0, 0, 8000) / 2))
 print("-------Ausgabe-------------------------")
+print("Voltage Value: " + str(rl.cbVOut(0,0,101,2.5)))
 
 sin = [np.sin(2 * np.pi * 2 * (i / 30)) for i in range(0, 30)]
 
